@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:InOrOut/InOrOut.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:GameBase/GameBase.xcodeproj">
    </FileRef>
 </Workspace>
