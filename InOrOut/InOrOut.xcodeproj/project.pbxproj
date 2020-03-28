@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1298B500242D9E28000721A4 /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 1298B4FF242D9E28000721A4 /* Cards.json */; };
+		1298B503242EE14A000721A4 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B502242EE14A000721A4 /* Cards.swift */; };
+		1298B505242EE20A000721A4 /* CardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B504242EE20A000721A4 /* CardsModel.swift */; };
+		1298B508242EE4EF000721A4 /* InAndOutContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B507242EE4EF000721A4 /* InAndOutContainer.swift */; };
 		12A717C22427E891000936AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C12427E891000936AC /* AppDelegate.swift */; };
 		12A717C42427E891000936AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C32427E891000936AC /* SceneDelegate.swift */; };
 		12A717C62427E891000936AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C52427E891000936AC /* ViewController.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1298B4FF242D9E28000721A4 /* Cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
+		1298B502242EE14A000721A4 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		1298B504242EE20A000721A4 /* CardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsModel.swift; sourceTree = "<group>"; };
+		1298B507242EE4EF000721A4 /* InAndOutContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAndOutContainer.swift; sourceTree = "<group>"; };
 		12A717BE2427E891000936AC /* InOrOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InOrOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A717C12427E891000936AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A717C32427E891000936AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1298B501242EE10D000721A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1298B4FF242D9E28000721A4 /* Cards.json */,
+				1298B502242EE14A000721A4 /* Cards.swift */,
+				1298B504242EE20A000721A4 /* CardsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1298B506242EE48C000721A4 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				1298B507242EE4EF000721A4 /* InAndOutContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 		12A717B52427E891000936AC = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +130,10 @@
 				12A717C32427E891000936AC /* SceneDelegate.swift */,
 				12A717C52427E891000936AC /* ViewController.swift */,
 				12A717CA2427E892000936AC /* Assets.xcassets */,
+				1298B506242EE48C000721A4 /* Container */,
 				12A717CC2427E892000936AC /* LaunchScreen.storyboard */,
 				12A717C72427E891000936AC /* Main.storyboard */,
+				1298B501242EE10D000721A4 /* Model */,
 			);
 			path = InOrOut;
 			sourceTree = "<group>";
@@ -232,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1298B500242D9E28000721A4 /* Cards.json in Resources */,
 				12A717CE2427E892000936AC /* LaunchScreen.storyboard in Resources */,
 				12A717CB2427E892000936AC /* Assets.xcassets in Resources */,
 				12A717C92427E891000936AC /* Main.storyboard in Resources */,
@@ -259,9 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1298B505242EE20A000721A4 /* CardsModel.swift in Sources */,
 				12A717C62427E891000936AC /* ViewController.swift in Sources */,
 				12A717C22427E891000936AC /* AppDelegate.swift in Sources */,
+				1298B508242EE4EF000721A4 /* InAndOutContainer.swift in Sources */,
 				12A717C42427E891000936AC /* SceneDelegate.swift in Sources */,
+				1298B503242EE14A000721A4 /* Cards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
