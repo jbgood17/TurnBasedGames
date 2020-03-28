@@ -64,7 +64,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="NtG-3t-HTh">
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="NtG-3t-HTh">
                                         <rect key="frame" x="310" y="0.0" width="94" height="32"/>
                                     </stepper>
                                 </subviews>
@@ -79,6 +79,10 @@
                         <viewLayoutGuide key="safeArea" id="PDz-U0-X9m"/>
                     </view>
                     <navigationItem key="navigationItem" title="Setup Players" id="ngF-MY-G4P"/>
+                    <connections>
+                        <outlet property="numberOfPlayersLabel" destination="fUQ-Al-c5I" id="zUC-pp-w64"/>
+                        <outlet property="numberOfPlayersStepper" destination="NtG-3t-HTh" id="2jB-0o-qcu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWH-y9-j3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

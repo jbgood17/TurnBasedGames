@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class SetupPlayersViewController: UIViewController {
 
+	let disposeBag = DisposeBag()
+	let numPlayersText = "Number Of Players: "
+	
+	let viewModel = InAndOutContainer.setupPlayersViewModel()
+	
+	@IBOutlet weak var numberOfPlayersLabel: UILabel!
+	@IBOutlet weak var numberOfPlayersStepper: UIStepper!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-		// Do any additional setup after loading the view.
+		
+		setupBindings()
 	}
-
 	
+	func setupBindings() {
+		viewModel.numberOfPlayers.map { (numPlayers) -> String in
+			return self.numPlayersText + "\(Int(numPlayers))"
+		}.bind(to: numberOfPlayersLabel.rx.text).disposed(by: disposeBag)
+				
+		numberOfPlayersStepper.rx.value.bind(to: viewModel.numberOfPlayers).disposed(by: disposeBag)
+	}
 }

@@ -16,4 +16,8 @@ class InAndOutContainer {
 	static func cardsViewModel() -> CardsViewModel {
 		return CardsViewModel(cardsModel: InAndOutContainer.cardsModel())
 	}
+	
+	static func setupPlayersViewModel() -> SetupPlayersViewModel {
+		return SetupPlayersViewModel()
+	}
 }

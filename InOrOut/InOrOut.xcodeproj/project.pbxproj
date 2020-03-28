@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,8 @@
 		12A717CE2427E892000936AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A717CC2427E892000936AC /* LaunchScreen.storyboard */; };
 		12A717D92427E892000936AC /* InOrOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717D82427E892000936AC /* InOrOutTests.swift */; };
 		12A717E42427E892000936AC /* InOrOutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717E32427E892000936AC /* InOrOutUITests.swift */; };
+		12C23236242FA00800443A17 /* SetupPlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C23235242FA00800443A17 /* SetupPlayersViewModel.swift */; };
+		A97EDF900E948254CE77814F /* Pods_InOrOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8770A6C32290F6B205FC5B51 /* Pods_InOrOut.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		12A717DF2427E892000936AC /* InOrOutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InOrOutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A717E32427E892000936AC /* InOrOutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InOrOutUITests.swift; sourceTree = "<group>"; };
 		12A717E52427E892000936AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C23235242FA00800443A17 /* SetupPlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPlayersViewModel.swift; sourceTree = "<group>"; };
+		34E15434B720E80B815EF37D /* Pods-InOrOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InOrOut.debug.xcconfig"; path = "Target Support Files/Pods-InOrOut/Pods-InOrOut.debug.xcconfig"; sourceTree = "<group>"; };
+		5E5180B2F0AAC4F4C3CCA81A /* Pods-InOrOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InOrOut.release.xcconfig"; path = "Target Support Files/Pods-InOrOut/Pods-InOrOut.release.xcconfig"; sourceTree = "<group>"; };
+		8770A6C32290F6B205FC5B51 /* Pods_InOrOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InOrOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97EDF900E948254CE77814F /* Pods_InOrOut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1298B511242EEC7C000721A4 /* CardsViewModel.swift */,
+				12C23235242FA00800443A17 /* SetupPlayersViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +184,8 @@
 				12A717D72427E892000936AC /* InOrOutTests */,
 				12A717E22427E892000936AC /* InOrOutUITests */,
 				12A717BF2427E891000936AC /* Products */,
+				7F764C9EF37597C46E08ACCB /* Pods */,
+				BDCDD6BB32B04CDC1E45A8E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +235,24 @@
 			path = InOrOutUITests;
 			sourceTree = "<group>";
 		};
+		7F764C9EF37597C46E08ACCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34E15434B720E80B815EF37D /* Pods-InOrOut.debug.xcconfig */,
+				5E5180B2F0AAC4F4C3CCA81A /* Pods-InOrOut.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		BDCDD6BB32B04CDC1E45A8E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8770A6C32290F6B205FC5B51 /* Pods_InOrOut.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12A717E82427E892000936AC /* Build configuration list for PBXNativeTarget "InOrOut" */;
 			buildPhases = (
+				B004ACB4E4922C618A505ADE /* [CP] Check Pods Manifest.lock */,
 				12A717BA2427E891000936AC /* Sources */,
 				12A717BB2427E891000936AC /* Frameworks */,
 				12A717BC2427E891000936AC /* Resources */,
+				FCD7EF87143DEA6AD92E864C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -353,6 +383,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B004ACB4E4922C618A505ADE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InOrOut-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCD7EF87143DEA6AD92E864C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InOrOut/Pods-InOrOut-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InOrOut/Pods-InOrOut-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InOrOut/Pods-InOrOut-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12A717BA2427E891000936AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -369,6 +441,7 @@
 				122ACB54242F9D270073CE58 /* SetupPlayersViewController.swift in Sources */,
 				1298B517242EF297000721A4 /* CardCell.swift in Sources */,
 				122ACB52242F9B1F0073CE58 /* GameStartViewController.swift in Sources */,
+				12C23236242FA00800443A17 /* SetupPlayersViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +613,7 @@
 		};
 		12A717E92427E892000936AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E15434B720E80B815EF37D /* Pods-InOrOut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +632,7 @@
 		};
 		12A717EA2427E892000936AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E5180B2F0AAC4F4C3CCA81A /* Pods-InOrOut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
