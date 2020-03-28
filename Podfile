@@ -7,4 +7,8 @@ target 'InOrOut' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+	
+	target 'InOrOutTests' do
+		pod 'RxTest'
+	end
 end

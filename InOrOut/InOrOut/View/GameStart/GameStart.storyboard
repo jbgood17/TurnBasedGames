@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,14 +65,58 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="NtG-3t-HTh">
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="NtG-3t-HTh">
                                         <rect key="frame" x="310" y="0.0" width="94" height="32"/>
                                     </stepper>
                                 </subviews>
                             </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uKQ-EB-LRC">
+                                <rect key="frame" x="0.0" y="125" width="414" height="737"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kdF-ei-eWb">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlayerCell" id="XN6-vz-NEj" customClass="PlayerCell" customModule="InOrOut" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="10" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="d0p-yW-3ym">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWY-O6-pbT">
+                                                    <rect key="frame" x="5" y="15" width="40" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="JWY-O6-pbT" secondAttribute="trailing" constant="5" id="05q-Yw-UVm"/>
+                                                <constraint firstItem="JWY-O6-pbT" firstAttribute="centerY" secondItem="d0p-yW-3ym" secondAttribute="centerY" id="ZtC-RA-QHL"/>
+                                                <constraint firstItem="JWY-O6-pbT" firstAttribute="leading" secondItem="d0p-yW-3ym" secondAttribute="leading" constant="5" id="aci-h0-cnp"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="playerNameLabel" destination="JWY-O6-pbT" id="WPo-3O-xPt"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="delegate" destination="B6i-GG-xqW" id="gLo-ti-tJG"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="PDz-U0-X9m" firstAttribute="trailing" secondItem="uKQ-EB-LRC" secondAttribute="trailing" id="0M3-lc-MBx"/>
+                            <constraint firstItem="PDz-U0-X9m" firstAttribute="bottom" secondItem="uKQ-EB-LRC" secondAttribute="bottom" id="4gb-b5-891"/>
+                            <constraint firstItem="uKQ-EB-LRC" firstAttribute="leading" secondItem="PDz-U0-X9m" secondAttribute="leading" id="74b-pJ-9kL"/>
+                            <constraint firstItem="uKQ-EB-LRC" firstAttribute="top" secondItem="31f-IJ-6hC" secondAttribute="bottom" id="7Tv-SO-9dz"/>
                             <constraint firstItem="31f-IJ-6hC" firstAttribute="top" secondItem="PDz-U0-X9m" secondAttribute="top" constant="5" id="CWg-dE-x05"/>
                             <constraint firstItem="31f-IJ-6hC" firstAttribute="leading" secondItem="PDz-U0-X9m" secondAttribute="leading" constant="5" id="MDf-RW-nfk"/>
                             <constraint firstItem="PDz-U0-X9m" firstAttribute="trailing" secondItem="31f-IJ-6hC" secondAttribute="trailing" constant="5" id="YgO-Sb-fb1"/>
@@ -82,6 +127,7 @@
                     <connections>
                         <outlet property="numberOfPlayersLabel" destination="fUQ-Al-c5I" id="zUC-pp-w64"/>
                         <outlet property="numberOfPlayersStepper" destination="NtG-3t-HTh" id="2jB-0o-qcu"/>
+                        <outlet property="playersCollectionView" destination="uKQ-EB-LRC" id="MWA-En-i12"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWH-y9-j3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

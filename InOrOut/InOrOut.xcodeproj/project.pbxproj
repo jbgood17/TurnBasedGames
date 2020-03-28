@@ -18,6 +18,7 @@
 		1298B50F242EE7DC000721A4 /* ObservableValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B50E242EE7DC000721A4 /* ObservableValueTests.swift */; };
 		1298B512242EEC7C000721A4 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B511242EEC7C000721A4 /* CardsViewModel.swift */; };
 		1298B517242EF297000721A4 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B516242EF297000721A4 /* CardCell.swift */; };
+		12A551BC242FC42000E0A697 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A551BB242FC42000E0A697 /* PlayerCell.swift */; };
 		12A717C22427E891000936AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C12427E891000936AC /* AppDelegate.swift */; };
 		12A717C42427E891000936AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C32427E891000936AC /* SceneDelegate.swift */; };
 		12A717C62427E891000936AC /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C52427E891000936AC /* CardsViewController.swift */; };
@@ -27,6 +28,10 @@
 		12A717D92427E892000936AC /* InOrOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717D82427E892000936AC /* InOrOutTests.swift */; };
 		12A717E42427E892000936AC /* InOrOutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717E32427E892000936AC /* InOrOutUITests.swift */; };
 		12C23236242FA00800443A17 /* SetupPlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C23235242FA00800443A17 /* SetupPlayersViewModel.swift */; };
+		12C2323A242FAAF900443A17 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C23239242FAAF900443A17 /* Player.swift */; };
+		12C2323D242FAD6D00443A17 /* RxUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C2323C242FAD6D00443A17 /* RxUtilities.swift */; };
+		12C23240242FB6B400443A17 /* SetupPlayersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C2323F242FB6B400443A17 /* SetupPlayersViewModelTests.swift */; };
+		7A4456CDD4C66E1B83C22A0C /* Pods_InOrOut_InOrOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99D089DEBC9B5780728ABBC /* Pods_InOrOut_InOrOutTests.framework */; };
 		A97EDF900E948254CE77814F /* Pods_InOrOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8770A6C32290F6B205FC5B51 /* Pods_InOrOut.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FC7B8CBC5461AEE23F1DDBB /* Pods-InOrOut-InOrOutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InOrOut-InOrOutTests.debug.xcconfig"; path = "Target Support Files/Pods-InOrOut-InOrOutTests/Pods-InOrOut-InOrOutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		122ACB4F242F9A560073CE58 /* GameStart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameStart.storyboard; sourceTree = "<group>"; };
 		122ACB51242F9B1F0073CE58 /* GameStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
 		122ACB53242F9D270073CE58 /* SetupPlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPlayersViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,7 @@
 		1298B50E242EE7DC000721A4 /* ObservableValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableValueTests.swift; sourceTree = "<group>"; };
 		1298B511242EEC7C000721A4 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		1298B516242EF297000721A4 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		12A551BB242FC42000E0A697 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		12A717BE2427E891000936AC /* InOrOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InOrOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A717C12427E891000936AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A717C32427E891000936AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,9 +81,14 @@
 		12A717E32427E892000936AC /* InOrOutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InOrOutUITests.swift; sourceTree = "<group>"; };
 		12A717E52427E892000936AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12C23235242FA00800443A17 /* SetupPlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPlayersViewModel.swift; sourceTree = "<group>"; };
+		12C23239242FAAF900443A17 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		12C2323C242FAD6D00443A17 /* RxUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxUtilities.swift; sourceTree = "<group>"; };
+		12C2323F242FB6B400443A17 /* SetupPlayersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPlayersViewModelTests.swift; sourceTree = "<group>"; };
 		34E15434B720E80B815EF37D /* Pods-InOrOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InOrOut.debug.xcconfig"; path = "Target Support Files/Pods-InOrOut/Pods-InOrOut.debug.xcconfig"; sourceTree = "<group>"; };
 		5E5180B2F0AAC4F4C3CCA81A /* Pods-InOrOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InOrOut.release.xcconfig"; path = "Target Support Files/Pods-InOrOut/Pods-InOrOut.release.xcconfig"; sourceTree = "<group>"; };
 		8770A6C32290F6B205FC5B51 /* Pods_InOrOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InOrOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D6149BACC10E8DB9AAB7ED /* Pods-InOrOut-InOrOutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InOrOut-InOrOutTests.release.xcconfig"; path = "Target Support Files/Pods-InOrOut-InOrOutTests/Pods-InOrOut-InOrOutTests.release.xcconfig"; sourceTree = "<group>"; };
+		A99D089DEBC9B5780728ABBC /* Pods_InOrOut_InOrOutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InOrOut_InOrOutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4456CDD4C66E1B83C22A0C /* Pods_InOrOut_InOrOutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +133,7 @@
 			children = (
 				122ACB4F242F9A560073CE58 /* GameStart.storyboard */,
 				122ACB51242F9B1F0073CE58 /* GameStartViewController.swift */,
+				12A551BB242FC42000E0A697 /* PlayerCell.swift */,
 				122ACB53242F9D270073CE58 /* SetupPlayersViewController.swift */,
 			);
 			path = GameStart;
@@ -128,9 +142,8 @@
 		1298B501242EE10D000721A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1298B4FF242D9E28000721A4 /* Cards.json */,
-				1298B502242EE14A000721A4 /* Cards.swift */,
-				1298B504242EE20A000721A4 /* CardsModel.swift */,
+				12C23238242FAAD800443A17 /* Players */,
+				12C23237242FAAB100443A17 /* Cards */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,12 +156,13 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
-		1298B509242EE5E2000721A4 /* ObservableValue */ = {
+		1298B509242EE5E2000721A4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				1298B50A242EE658000721A4 /* ObservableValue.swift */,
+				12C2323C242FAD6D00443A17 /* RxUtilities.swift */,
 			);
-			path = ObservableValue;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		1298B50D242EE669000721A4 /* ObservableValue */ = {
@@ -209,7 +223,7 @@
 				1298B506242EE48C000721A4 /* Container */,
 				12A717CC2427E892000936AC /* LaunchScreen.storyboard */,
 				1298B501242EE10D000721A4 /* Model */,
-				1298B509242EE5E2000721A4 /* ObservableValue */,
+				1298B509242EE5E2000721A4 /* Utilities */,
 				1298B513242EF10C000721A4 /* View */,
 				1298B510242EEC5F000721A4 /* ViewModel */,
 			);
@@ -219,6 +233,7 @@
 		12A717D72427E892000936AC /* InOrOutTests */ = {
 			isa = PBXGroup;
 			children = (
+				12C2323E242FB69B00443A17 /* ViewModel */,
 				12A717DA2427E892000936AC /* Info.plist */,
 				12A717D82427E892000936AC /* InOrOutTests.swift */,
 				1298B50D242EE669000721A4 /* ObservableValue */,
@@ -235,11 +250,39 @@
 			path = InOrOutUITests;
 			sourceTree = "<group>";
 		};
+		12C23237242FAAB100443A17 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				1298B4FF242D9E28000721A4 /* Cards.json */,
+				1298B502242EE14A000721A4 /* Cards.swift */,
+				1298B504242EE20A000721A4 /* CardsModel.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		12C23238242FAAD800443A17 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				12C23239242FAAF900443A17 /* Player.swift */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		12C2323E242FB69B00443A17 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12C2323F242FB6B400443A17 /* SetupPlayersViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		7F764C9EF37597C46E08ACCB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				34E15434B720E80B815EF37D /* Pods-InOrOut.debug.xcconfig */,
 				5E5180B2F0AAC4F4C3CCA81A /* Pods-InOrOut.release.xcconfig */,
+				0FC7B8CBC5461AEE23F1DDBB /* Pods-InOrOut-InOrOutTests.debug.xcconfig */,
+				88D6149BACC10E8DB9AAB7ED /* Pods-InOrOut-InOrOutTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -249,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				8770A6C32290F6B205FC5B51 /* Pods_InOrOut.framework */,
+				A99D089DEBC9B5780728ABBC /* Pods_InOrOut_InOrOutTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -279,9 +323,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12A717EB2427E892000936AC /* Build configuration list for PBXNativeTarget "InOrOutTests" */;
 			buildPhases = (
+				CDDFFDA2BB21EA379EB1E0AD /* [CP] Check Pods Manifest.lock */,
 				12A717D02427E892000936AC /* Sources */,
 				12A717D12427E892000936AC /* Frameworks */,
 				12A717D22427E892000936AC /* Resources */,
+				F3FF098DA32328B5637B35A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,6 +452,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CDDFFDA2BB21EA379EB1E0AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InOrOut-InOrOutTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3FF098DA32328B5637B35A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InOrOut-InOrOutTests/Pods-InOrOut-InOrOutTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InOrOut-InOrOutTests/Pods-InOrOut-InOrOutTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InOrOut-InOrOutTests/Pods-InOrOut-InOrOutTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FCD7EF87143DEA6AD92E864C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,10 +520,13 @@
 				1298B50B242EE658000721A4 /* ObservableValue.swift in Sources */,
 				12A717C62427E891000936AC /* CardsViewController.swift in Sources */,
 				12A717C22427E891000936AC /* AppDelegate.swift in Sources */,
+				12C2323A242FAAF900443A17 /* Player.swift in Sources */,
 				1298B508242EE4EF000721A4 /* InAndOutContainer.swift in Sources */,
 				12A717C42427E891000936AC /* SceneDelegate.swift in Sources */,
 				1298B503242EE14A000721A4 /* Cards.swift in Sources */,
+				12A551BC242FC42000E0A697 /* PlayerCell.swift in Sources */,
 				122ACB54242F9D270073CE58 /* SetupPlayersViewController.swift in Sources */,
+				12C2323D242FAD6D00443A17 /* RxUtilities.swift in Sources */,
 				1298B517242EF297000721A4 /* CardCell.swift in Sources */,
 				122ACB52242F9B1F0073CE58 /* GameStartViewController.swift in Sources */,
 				12C23236242FA00800443A17 /* SetupPlayersViewModel.swift in Sources */,
@@ -449,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C23240242FB6B400443A17 /* SetupPlayersViewModelTests.swift in Sources */,
 				1298B50F242EE7DC000721A4 /* ObservableValueTests.swift in Sources */,
 				12A717D92427E892000936AC /* InOrOutTests.swift in Sources */,
 			);
@@ -651,6 +740,7 @@
 		};
 		12A717EC2427E892000936AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FC7B8CBC5461AEE23F1DDBB /* Pods-InOrOut-InOrOutTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -673,6 +763,7 @@
 		};
 		12A717ED2427E892000936AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D6149BACC10E8DB9AAB7ED /* Pods-InOrOut-InOrOutTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
