@@ -13,6 +13,8 @@
 		1298B508242EE4EF000721A4 /* InAndOutContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B507242EE4EF000721A4 /* InAndOutContainer.swift */; };
 		1298B50B242EE658000721A4 /* ObservableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B50A242EE658000721A4 /* ObservableValue.swift */; };
 		1298B50F242EE7DC000721A4 /* ObservableValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B50E242EE7DC000721A4 /* ObservableValueTests.swift */; };
+		1298B512242EEC7C000721A4 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B511242EEC7C000721A4 /* CardsViewModel.swift */; };
+		1298B517242EF297000721A4 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B516242EF297000721A4 /* CardCell.swift */; };
 		12A717C22427E891000936AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C12427E891000936AC /* AppDelegate.swift */; };
 		12A717C42427E891000936AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C32427E891000936AC /* SceneDelegate.swift */; };
 		12A717C62427E891000936AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C52427E891000936AC /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 		1298B507242EE4EF000721A4 /* InAndOutContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAndOutContainer.swift; sourceTree = "<group>"; };
 		1298B50A242EE658000721A4 /* ObservableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableValue.swift; sourceTree = "<group>"; };
 		1298B50E242EE7DC000721A4 /* ObservableValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableValueTests.swift; sourceTree = "<group>"; };
+		1298B511242EEC7C000721A4 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		1298B516242EF297000721A4 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		12A717BE2427E891000936AC /* InOrOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InOrOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A717C12427E891000936AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A717C32427E891000936AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,22 @@
 			path = ObservableValue;
 			sourceTree = "<group>";
 		};
+		1298B510242EEC5F000721A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1298B511242EEC7C000721A4 /* CardsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1298B513242EF10C000721A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1298B516242EF297000721A4 /* CardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		12A717B52427E891000936AC = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +175,8 @@
 				12A717C72427E891000936AC /* Main.storyboard */,
 				1298B501242EE10D000721A4 /* Model */,
 				1298B509242EE5E2000721A4 /* ObservableValue */,
+				1298B513242EF10C000721A4 /* View */,
+				1298B510242EEC5F000721A4 /* ViewModel */,
 			);
 			path = InOrOut;
 			sourceTree = "<group>";
@@ -310,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1298B512242EEC7C000721A4 /* CardsViewModel.swift in Sources */,
 				1298B505242EE20A000721A4 /* CardsModel.swift in Sources */,
 				1298B50B242EE658000721A4 /* ObservableValue.swift in Sources */,
 				12A717C62427E891000936AC /* ViewController.swift in Sources */,
@@ -317,6 +340,7 @@
 				1298B508242EE4EF000721A4 /* InAndOutContainer.swift in Sources */,
 				12A717C42427E891000936AC /* SceneDelegate.swift in Sources */,
 				1298B503242EE14A000721A4 /* Cards.swift in Sources */,
+				1298B517242EF297000721A4 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

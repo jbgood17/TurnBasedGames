@@ -12,4 +12,8 @@ class InAndOutContainer {
 	static func cardsModel() -> CardsModel {
 		return LocalCardsModel(urlString: "Cards")
 	}
+	
+	static func cardsViewModel() -> CardsViewModel {
+		return CardsViewModel(cardsModel: InAndOutContainer.cardsModel())
+	}
 }
