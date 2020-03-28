@@ -11,6 +11,8 @@
 		1298B503242EE14A000721A4 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B502242EE14A000721A4 /* Cards.swift */; };
 		1298B505242EE20A000721A4 /* CardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B504242EE20A000721A4 /* CardsModel.swift */; };
 		1298B508242EE4EF000721A4 /* InAndOutContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B507242EE4EF000721A4 /* InAndOutContainer.swift */; };
+		1298B50B242EE658000721A4 /* ObservableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B50A242EE658000721A4 /* ObservableValue.swift */; };
+		1298B50F242EE7DC000721A4 /* ObservableValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B50E242EE7DC000721A4 /* ObservableValueTests.swift */; };
 		12A717C22427E891000936AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C12427E891000936AC /* AppDelegate.swift */; };
 		12A717C42427E891000936AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C32427E891000936AC /* SceneDelegate.swift */; };
 		12A717C62427E891000936AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C52427E891000936AC /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 		1298B502242EE14A000721A4 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		1298B504242EE20A000721A4 /* CardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsModel.swift; sourceTree = "<group>"; };
 		1298B507242EE4EF000721A4 /* InAndOutContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAndOutContainer.swift; sourceTree = "<group>"; };
+		1298B50A242EE658000721A4 /* ObservableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableValue.swift; sourceTree = "<group>"; };
+		1298B50E242EE7DC000721A4 /* ObservableValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableValueTests.swift; sourceTree = "<group>"; };
 		12A717BE2427E891000936AC /* InOrOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InOrOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A717C12427E891000936AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A717C32427E891000936AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,22 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
+		1298B509242EE5E2000721A4 /* ObservableValue */ = {
+			isa = PBXGroup;
+			children = (
+				1298B50A242EE658000721A4 /* ObservableValue.swift */,
+			);
+			path = ObservableValue;
+			sourceTree = "<group>";
+		};
+		1298B50D242EE669000721A4 /* ObservableValue */ = {
+			isa = PBXGroup;
+			children = (
+				1298B50E242EE7DC000721A4 /* ObservableValueTests.swift */,
+			);
+			path = ObservableValue;
+			sourceTree = "<group>";
+		};
 		12A717B52427E891000936AC = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +154,7 @@
 				12A717CC2427E892000936AC /* LaunchScreen.storyboard */,
 				12A717C72427E891000936AC /* Main.storyboard */,
 				1298B501242EE10D000721A4 /* Model */,
+				1298B509242EE5E2000721A4 /* ObservableValue */,
 			);
 			path = InOrOut;
 			sourceTree = "<group>";
@@ -141,8 +162,9 @@
 		12A717D72427E892000936AC /* InOrOutTests */ = {
 			isa = PBXGroup;
 			children = (
-				12A717D82427E892000936AC /* InOrOutTests.swift */,
 				12A717DA2427E892000936AC /* Info.plist */,
+				12A717D82427E892000936AC /* InOrOutTests.swift */,
+				1298B50D242EE669000721A4 /* ObservableValue */,
 			);
 			path = InOrOutTests;
 			sourceTree = "<group>";
@@ -289,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1298B505242EE20A000721A4 /* CardsModel.swift in Sources */,
+				1298B50B242EE658000721A4 /* ObservableValue.swift in Sources */,
 				12A717C62427E891000936AC /* ViewController.swift in Sources */,
 				12A717C22427E891000936AC /* AppDelegate.swift in Sources */,
 				1298B508242EE4EF000721A4 /* InAndOutContainer.swift in Sources */,
@@ -301,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1298B50F242EE7DC000721A4 /* ObservableValueTests.swift in Sources */,
 				12A717D92427E892000936AC /* InOrOutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
