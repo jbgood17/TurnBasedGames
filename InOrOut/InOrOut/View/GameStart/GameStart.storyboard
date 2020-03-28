@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qo6-Dt-QVm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Start View Controller-->
+        <scene sceneID="kni-Cl-8GP">
+            <objects>
+                <viewController id="4jA-ct-V43" customClass="GameStartViewController" customModule="InOrOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VMB-Rb-Ayo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-qo-tfL">
+                                <rect key="frame" x="124.5" y="394.5" width="165.5" height="107.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Or Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2x-I4-mIu">
+                                        <rect key="frame" x="0.0" y="0.0" width="165.5" height="51.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JU4-Pq-373">
+                                        <rect key="frame" x="0.0" y="77.5" width="165.5" height="30"/>
+                                        <state key="normal" title="Start Game"/>
+                                        <connections>
+                                            <segue destination="B6i-GG-xqW" kind="show" id="EK4-8Y-mVW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1pc-qo-tfL" firstAttribute="centerY" secondItem="VMB-Rb-Ayo" secondAttribute="centerY" id="ouZ-dX-VZy"/>
+                            <constraint firstItem="1pc-qo-tfL" firstAttribute="centerX" secondItem="VMB-Rb-Ayo" secondAttribute="centerX" id="vMW-BL-LV6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ECt-o8-FfT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="csW-bb-QKN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJw-1R-4ed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137.68115942029" y="142.63392857142856"/>
+        </scene>
+        <!--Setup Players-->
+        <scene sceneID="mIc-7K-r9S">
+            <objects>
+                <viewController id="B6i-GG-xqW" customClass="SetupPlayersViewController" customModule="InOrOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rts-oT-Fbm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31f-IJ-6hC">
+                                <rect key="frame" x="5" y="93" width="404" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Of Players: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUQ-Al-c5I">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="NtG-3t-HTh">
+                                        <rect key="frame" x="310" y="0.0" width="94" height="32"/>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="31f-IJ-6hC" firstAttribute="top" secondItem="PDz-U0-X9m" secondAttribute="top" constant="5" id="CWg-dE-x05"/>
+                            <constraint firstItem="31f-IJ-6hC" firstAttribute="leading" secondItem="PDz-U0-X9m" secondAttribute="leading" constant="5" id="MDf-RW-nfk"/>
+                            <constraint firstItem="PDz-U0-X9m" firstAttribute="trailing" secondItem="31f-IJ-6hC" secondAttribute="trailing" constant="5" id="YgO-Sb-fb1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PDz-U0-X9m"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Setup Players" id="ngF-MY-G4P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWH-y9-j3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2103" y="143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5k9-F6-NsR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qo6-Dt-QVm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2sr-Ra-OUQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4jA-ct-V43" kind="relationship" relationship="rootViewController" id="OgX-Ud-MqK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lh-Br-lk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227.536231884058" y="142.63392857142856"/>
+        </scene>
+    </scenes>
+</document>

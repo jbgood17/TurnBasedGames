@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CardsViewController: UIViewController {
 
 	let viewModel: CardsViewModel = InAndOutContainer.cardsViewModel()
 	
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension CardsViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return viewModel.currentCards.currentValue?.cards.count ?? 0
 	}
