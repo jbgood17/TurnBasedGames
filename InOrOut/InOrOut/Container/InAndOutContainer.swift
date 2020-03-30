@@ -20,4 +20,14 @@ class InAndOutContainer {
 	static func setupPlayersViewModel() -> SetupPlayersViewModel {
 		return SetupPlayersViewModel()
 	}
+	
+	static func playerViewModel(player: Player) -> PlayerViewModel {
+		return PlayerViewModel(player: player)
+	}
+	
+	static func editPlayerViewController(viewModel: PlayerViewModel) -> EditPlayerViewController {
+		let editPlayerViewController = EditPlayerViewController(nibName: "EditPlayer", bundle: nil)
+		editPlayerViewController.viewModel = viewModel
+		return editPlayerViewController
+	}
 }

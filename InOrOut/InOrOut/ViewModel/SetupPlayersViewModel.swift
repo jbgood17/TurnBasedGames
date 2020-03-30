@@ -24,11 +24,15 @@ class SetupPlayersViewModel {
 		numberOfPlayers.distinctUntilChanged().safe(self).map { (self, numPlayers) in
 			guard numPlayers >= 0 else { return [] }
 			
-			var players: [Player] = []
-			for i in 0..<numPlayers {
-				players.append(Player(name: "Player \(i + 1)"))
+			var currentPlayers = self.players.currentValue
+			while currentPlayers.count != numPlayers {
+				if currentPlayers.count < numPlayers {
+					currentPlayers.append(Player(name: "Player \(currentPlayers.count + 1)"))
+				} else {
+					currentPlayers.removeLast()
+				}
 			}
-			return players
+			return currentPlayers
 		}.bind(to: players).disposed(by: disposeBag)
 	}
 	

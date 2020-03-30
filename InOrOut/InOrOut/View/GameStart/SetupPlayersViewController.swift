@@ -38,9 +38,23 @@ class SetupPlayersViewController: UIViewController {
 		
 		viewModel.players.bind(to: playersCollectionView.rx.items(cellIdentifier: "PlayerCell")) { row, player, cell in
 			guard let playerCell = cell as? PlayerCell else { return }
-			
-			playerCell.playerNameLabel.text = player.name
+			playerCell.bind(toViewModel: PlayerViewModel(player: player))
 		}.disposed(by: disposeBag)
+		
+		playersCollectionView.rx.itemSelected.safe(self).subscribe(onNext: { (self, indexPath) in
+			guard
+				let cell = self.playersCollectionView.cellForItem(at: indexPath) as? PlayerCell,
+				let viewModel = cell.viewModel
+			else {
+				return
+			}
+			
+			let editPlayerViewController = InAndOutContainer.editPlayerViewController(viewModel: viewModel)
+			editPlayerViewController.modalTransitionStyle = .crossDissolve
+			editPlayerViewController.modalPresentationStyle = .formSheet
+			
+			self.present(editPlayerViewController, animated: true, completion: nil)
+		}).disposed(by: disposeBag)
 	}
 }
 

@@ -19,6 +19,10 @@
 		1298B512242EEC7C000721A4 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B511242EEC7C000721A4 /* CardsViewModel.swift */; };
 		1298B517242EF297000721A4 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298B516242EF297000721A4 /* CardCell.swift */; };
 		12A551BC242FC42000E0A697 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A551BB242FC42000E0A697 /* PlayerCell.swift */; };
+		12A551BF242FDE6000E0A697 /* EditPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A551BD242FDE6000E0A697 /* EditPlayerViewController.swift */; };
+		12A551C0242FDE6100E0A697 /* EditPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A551BE242FDE6000E0A697 /* EditPlayer.xib */; };
+		12A551C2242FE0F500E0A697 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A551C1242FE0F500E0A697 /* PlayerViewModel.swift */; };
+		12A551C7242FE4D000E0A697 /* PlayerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A551C6242FE4D000E0A697 /* PlayerViewModelTests.swift */; };
 		12A717C22427E891000936AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C12427E891000936AC /* AppDelegate.swift */; };
 		12A717C42427E891000936AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C32427E891000936AC /* SceneDelegate.swift */; };
 		12A717C62427E891000936AC /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A717C52427E891000936AC /* CardsViewController.swift */; };
@@ -66,6 +70,10 @@
 		1298B511242EEC7C000721A4 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		1298B516242EF297000721A4 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		12A551BB242FC42000E0A697 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		12A551BD242FDE6000E0A697 /* EditPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlayerViewController.swift; sourceTree = "<group>"; };
+		12A551BE242FDE6000E0A697 /* EditPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditPlayer.xib; sourceTree = "<group>"; };
+		12A551C1242FE0F500E0A697 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		12A551C6242FE4D000E0A697 /* PlayerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModelTests.swift; sourceTree = "<group>"; };
 		12A717BE2427E891000936AC /* InOrOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InOrOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A717C12427E891000936AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A717C32427E891000936AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +143,8 @@
 				122ACB51242F9B1F0073CE58 /* GameStartViewController.swift */,
 				12A551BB242FC42000E0A697 /* PlayerCell.swift */,
 				122ACB53242F9D270073CE58 /* SetupPlayersViewController.swift */,
+				12A551BD242FDE6000E0A697 /* EditPlayerViewController.swift */,
+				12A551BE242FDE6000E0A697 /* EditPlayer.xib */,
 			);
 			path = GameStart;
 			sourceTree = "<group>";
@@ -178,6 +188,7 @@
 			children = (
 				1298B511242EEC7C000721A4 /* CardsViewModel.swift */,
 				12C23235242FA00800443A17 /* SetupPlayersViewModel.swift */,
+				12A551C1242FE0F500E0A697 /* PlayerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -233,10 +244,10 @@
 		12A717D72427E892000936AC /* InOrOutTests */ = {
 			isa = PBXGroup;
 			children = (
-				12C2323E242FB69B00443A17 /* ViewModel */,
 				12A717DA2427E892000936AC /* Info.plist */,
 				12A717D82427E892000936AC /* InOrOutTests.swift */,
 				1298B50D242EE669000721A4 /* ObservableValue */,
+				12C2323E242FB69B00443A17 /* ViewModel */,
 			);
 			path = InOrOutTests;
 			sourceTree = "<group>";
@@ -272,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				12C2323F242FB6B400443A17 /* SetupPlayersViewModelTests.swift */,
+				12A551C6242FE4D000E0A697 /* PlayerViewModelTests.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -406,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				122ACB50242F9A560073CE58 /* GameStart.storyboard in Resources */,
+				12A551C0242FDE6100E0A697 /* EditPlayer.xib in Resources */,
 				1298B500242D9E28000721A4 /* Cards.json in Resources */,
 				12A717CE2427E892000936AC /* LaunchScreen.storyboard in Resources */,
 				12A717CB2427E892000936AC /* Assets.xcassets in Resources */,
@@ -526,10 +539,12 @@
 				1298B503242EE14A000721A4 /* Cards.swift in Sources */,
 				12A551BC242FC42000E0A697 /* PlayerCell.swift in Sources */,
 				122ACB54242F9D270073CE58 /* SetupPlayersViewController.swift in Sources */,
+				12A551BF242FDE6000E0A697 /* EditPlayerViewController.swift in Sources */,
 				12C2323D242FAD6D00443A17 /* RxUtilities.swift in Sources */,
 				1298B517242EF297000721A4 /* CardCell.swift in Sources */,
 				122ACB52242F9B1F0073CE58 /* GameStartViewController.swift in Sources */,
 				12C23236242FA00800443A17 /* SetupPlayersViewModel.swift in Sources */,
+				12A551C2242FE0F500E0A697 /* PlayerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C23240242FB6B400443A17 /* SetupPlayersViewModelTests.swift in Sources */,
+				12A551C7242FE4D000E0A697 /* PlayerViewModelTests.swift in Sources */,
 				1298B50F242EE7DC000721A4 /* ObservableValueTests.swift in Sources */,
 				12A717D92427E892000936AC /* InOrOutTests.swift in Sources */,
 			);
